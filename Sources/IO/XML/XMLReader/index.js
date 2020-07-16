@@ -322,7 +322,8 @@ function vtkXMLReader(publicAPI, model) {
 
   // Internal method to fetch Array
   function fetchData(url, option = {}) {
-    return model.dataAccessHelper.fetchBinary(url, option);
+    console.log(url);
+    return model.dataAccessHelper.fetchText(url, option);
   }
 
   // Set DataSet url
